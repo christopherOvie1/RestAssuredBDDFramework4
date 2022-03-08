@@ -1,0 +1,115 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 60,
+    "name": "chris ovie",
+    "phone_number": "07412346776",
+    "address": "235 salford street Manchester",
+    "website": "https://rahulshettyacademy.com",
+    "language": "English",
+    "location": {
+        "lat": -38.384394,
+        "lng": 33.42
+    },
+    "types": [
+        "shoe",
+        "shop"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Tue, 08 Mar 2022 09:13:08 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "026d86a5eeb2a23a6e0d9dd8d6036d50",
+    "scope": "APP",
+    "reference": "5d62b9480fd93edbfcb2452968fcab2c5d62b9480fd93edbfcb2452968fcab2c",
+    "id": "5d62b9480fd93edbfcb2452968fcab2c"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=026d86a5eeb2a23a6e0d9dd8d6036d50
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=026d86a5eeb2a23a6e0d9dd8d6036d50
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 08 Mar 2022 09:13:10 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 251
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-38.384394",
+        "longitude": "33.42"
+    },
+    "accuracy": "60",
+    "name": "chris ovie",
+    "phone_number": "07412346776",
+    "address": "235 salford street Manchester",
+    "types": "shoe,shop",
+    "website": "https://rahulshettyacademy.com",
+    "language": "English"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "026d86a5eeb2a23a6e0d9dd8d6036d50"
+}
+HTTP/1.1 200 OK
+Date: Tue, 08 Mar 2022 09:13:13 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
